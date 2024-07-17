@@ -6,6 +6,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include_directories(${CMAKE_SOURCE_DIR}/src)
 set(SOURCES
+    ${CMAKE_SOURCE_DIR}/src/game/tic_tac_toe.cpp
+    ${CMAKE_SOURCE_DIR}/src/game/user.cpp
     ${CMAKE_SOURCE_DIR}/src/main.cpp)
 
 add_executable(${PROJECT_NAME} ${SOURCES})

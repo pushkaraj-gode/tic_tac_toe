@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        // Linux debuugger configurations
+        {
+            "name": "Linux DBG",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/tic_tac_toe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "externalConsole": false
+        },
+        // Windows debuugger configurations
+        // To use windows debugger you need to run visual studio code using
+        // Developer command prompt of visual studio code
+        {
+            "name": "Windows DBG",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/Debug/tic_tac_toe.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole"
+        }
+    ]
+}

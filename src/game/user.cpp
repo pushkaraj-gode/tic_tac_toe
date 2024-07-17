@@ -2,19 +2,19 @@
 
 namespace tic_tac_toe
 {
-    Sign User::getSign() const
+    Sign User::getSign() const noexcept
     {
         return m_sign;
     }
-    void User::setSign(tic_tac_toe::Sign sign)
+    void User::setSign(tic_tac_toe::Sign sign) noexcept
     {
         m_sign = sign;
     }
-    std::string User::getName() const
+    std::string User::getName() const noexcept
     {
         return m_name;
     }
-    void User::setName(std::string const& name)
+    void User::setName(std::string const& name) noexcept
     {
         m_name = name;
     }

@@ -186,7 +186,7 @@ namespace tic_tac_toe
             std::cout << "\t\t\t";
             for(int j = 0; j < COL; j++)
             {
-                std::cout << "|";
+                std::cout << " | ";
                 if(0 == *(pMatrix + i * COL + j))
                 {
                     std::cout << " ";
@@ -196,7 +196,7 @@ namespace tic_tac_toe
                     std::cout << ((static_cast<int>(Sign::X) == *(pMatrix + i * COL + j)) ? "X" : "O");
                 }
             }
-            std::cout << "|" << std::endl;
+            std::cout << " |" << std::endl;
         }
         return cout;
     }
